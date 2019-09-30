@@ -37,7 +37,7 @@ def main():
     # Show a web server with a version if available
     if len(cpe) > 4:
         print("Web Server: {0} {1} {2}".format( cpe[2], cpe[3], cpe[4]))
-    elif len(cpe) < 4:
+    elif len(cpe) in range(1,4):
         print("Web Server: {0} {1}".format( cpe[2], cpe[3]))
     else:
         print("Web servers are not found")
